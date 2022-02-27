@@ -1,0 +1,277 @@
+<!doctype html>
+<html translate="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magnate</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="offcanvas offcanvas-top container" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="z-index: 100000000;">
+    <div class="offcanvas-header">
+      <h3>Сейчас играет: <span id="currentAudio"></span></h3>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex songs ">
+        <span class="song" id="song1" style="cursor: pointer;">Melanie Martinez – Cake<img src="font-awesome-svg/volume-xmark.svg" width="20px"></span>
+        <span class="song" id="song2" style="cursor: pointer;">Pharrell Williams - Because I'm Happy<img src="font-awesome-svg/volume-xmark.svg" width="20px"></span>
+        <span class="song" id="song3" style="cursor: pointer;">Bobby McFerrin - Don't worry, Be happy<img src="font-awesome-svg/volume-xmark.svg" width="20px"></span>
+      </div>
+    </div>
+  </div>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <div class=" container py-1">
+                <a class="navbar-brand d-flex align-items-center" href="#"><img src="img/favicon.ico" width="50px" style="border-radius:100%;">
+                    <h2 class="m-0 ms-2">Malina's Bakery</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                          <a class="nav-link me-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" style="cursor: pointer;" onclick="checkIcons()">Музыка</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link me-5" href="index.html#about">О нас</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" aria-current="page" href="index.html#contact">Свяжитесь с нами</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="index.html#doings">Прайслист</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="index.html#cats">Ассортимент</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main >
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide container-fluid g-0" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="custom-carousel container-fluid" id="carousel1">
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-carousel container-fluid" id="carousel2"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        
+        <hr class="divider-page w-75 mx-auto">
+        <div class="container p-5 d-flex flex-column align-items-center text-center">
+          
+          <h1 class="fw-normal align-items-center p">Попробуйте что-то новое вместе с Malina's Bakery</h1>
+
+          <p class="lead" id="about">Мы предлагаем вам лучшее из всего что мы смогли собрать из мира кондитерских изделий.</p>
+          <button class="btn btn-lg pinky mt-5" id="goAheadButton">Узнать больше</button>
+        </div>
+        <hr class="divider-page container mx-auto">
+        <div class="row container mx-sm-5">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Мы верим в то, что мы больше чем просто, <span class="text-muted"><br> Кондитерская</span>.</h2> <br>
+            <p class="lead featurette-text">Бесконечный спектр цветов и красок ограниченный лишь вашим воображением. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium temporibus nemo accusamus, eum similique eius quibusdam delectus. Et atque commodi fugiat recusandae, ea impedit?</p> <br>
+            <button class="btn btn-lg pinky" id="findOutButton">Узнать больше</button>
+          </div>
+          <div class="col-md-5">
+            <div class="custom-img-about img-fluid mx-auto"></div>
+          </div>
+        </div>
+
+        
+        <hr class="divider-page container mx-auto" id="cats">
+
+        <div class="container p-5 d-flex flex-column align-items-center text-center">
+          <h1 class="fw-normal align-items-center p">Ассортимент праздничных тортов.</h1>
+
+          <p class="lead">Здесь вы можете выбрать торты для любого повода.</p>
+          <img class="mx-auto centered" src="font-awesome-svg/circle-arrow-up.svg" id="arrowDownAssortiment" width="30px">
+        </div>
+
+        <div class="row container mx-auto" id="assortiment">
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop1"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Pastry Box Bakery</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn pinky mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">12500тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop2"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Sweet n' Taste</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn pinky mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">9500тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop3"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Baking Obsession.</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn pinky mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">11000тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop4"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Cake Addict.</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn pinky mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">12000тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop5"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">The Sweet Spot.</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn pinky mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">5000тг.</small>
+              </div>
+            </div>
+          </div>
+                    <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop6"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">The Golden Slice.</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn pinky mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">13000тг.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider-page container mx-auto">
+
+        <div class="bg-white">
+          <div class="container py-1">
+            <section id="doings">
+              <h2 class="d-flex flex-column justify-content-center mt-5 text-center" style="color: black;"><p class="mb-3">Наш прайслист</p>
+              <img class="mx-auto" src="font-awesome-svg/circle-arrow-up.svg" id="arrowDownPricelist" width="30px"></h2>
+              <div class="mayble">
+                <table class="table mt-5">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Название</th>
+                      <th scope="col">Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-default">
+                      <th scope="row">1</th>
+                      <td>Pastry Box Bakery.</td>
+                      <td>12500тг.</td>
+                    </tr>
+                    <tr class="table-light">
+                      <th scope="row">2</th>
+                      <td>Sweet Taste of Success.</td>
+                      <td>9050тг.</td>
+                    </tr>
+                    <tr class="table-default">
+                      <th scope="row">3</th>
+                      <td>Baking Obsession.</td>
+                      <td>11000тг.</td>
+                    </tr>
+                    <tr class="table-light">
+                      <th scope="row">4</th>
+                      <td>Cake Addict.
+                      </td>
+                      <td>120000тг.</td>
+                    </tr>
+                    <tr class="table-default">
+                      <th scope="row">5</th>
+                      <td>The Sweet Spot.</td>
+                      <td>Бесплатно</td>
+                    </tr>
+                    <tr class="table-light">
+                      <th scope="row">6</th>
+                      <td>The Golden Slice.</td>
+                      <td>13000тг.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <hr class="divider-page" id="contact">
+
+      <div class="custom-img align-items-center d-flex flex-column" id="contact-img" style="border-radius: 40px;">
+        <div class="col-6 align-items-center d-flex flex-column text-white">
+          <h2 class="featurette-heading">Свяжитесь с нами</h2><br>
+          <div class="mb-4 bg-white ps-2 rounded d-flex pt-2">
+            <a href=""><img class="me-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png" alt="" width="40px"></a>
+            <a href=""><img class="me-4" src="https://cdns.iconmonstr.com/wp-content/assets/preview/2016/240/iconmonstr-whatsapp-1.png" alt="" width="40px"></a>
+            <a href=""><img class="me-2" src="https://www.vectorkhazana.com/assets/images/products/Google_Mail_ico.jpg" width="50px" style="margin-top: -5px;"></a>
+          </div>      
+              <p>Работаем шесть дней в неделю с 9:00 до 21:00.</p>
+
+              <p>Адресс: г.Джона, ул.Доу, дом 12.</p>
+          </div>
+        </div>
+        <hr class="divider-page">
+      </div>
+      
+  </div>
+
+                <footer class="container">
+                    <p class="float-end"><a href="#" class="anchorFix" style="color: black; text-decoration: none;">На верх</a></p>
+                    <p class="mb-5">С любовью и заботой ко всем <a href="" style="color: pink;">Любителям Сладкого</a>.&copy;</p>
+
+                </footer>
+    </main>
+
+    
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

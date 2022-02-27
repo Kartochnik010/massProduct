@@ -1,0 +1,78 @@
+#carousel1 {background-image: url(https://strg1.restoran.kz/neofiles/serve-image/5da93ba4d062910c1740fb38/1280x720/c1/q70);}
+#carousel2 {background-image: url(https://strg1.restoran.kz/neofiles/serve-image/5da93b70d062911b2d3d2151/1280x720/c1/q70);}
+
+#shop1{background-image: url(https://www.cakesbyrobin.co.uk/assets/fondant-free-cake-cakes-by-robin-3-308x389.jpg);}
+#shop2{background-image: url(http://cdn.l-media.net/media/50/45402/1042721-45402-l-VE9eqYV.jpg);}
+#shop3{background-image: url(https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2021/07/weddings_Cakes_LizziesBakery.jpg);}
+#shop4{background-image: url(https://images.squarespace-cdn.com/content/v1/53139932e4b04bcb37e820f6/f6da1762-cd14-4b17-996b-cce2805066eb/suarez-bakery-park-rd-charlotte-nc-green-stripes-cake-02-web.jpg);}
+#shop5{background-image: url(https://www.whitesbakeryandcafe.com/uploads/2/9/1/8/29180209/bc-25_orig.jpg);}
+#shop6{background-image: url(https://honeymoonbakery.com/wp-content/uploads/2020/01/HoneymoonBakery-GA-Rome-RobertT-278.jpg);}
+
+#contact-img{
+    background: url(https://townsquare.media/site/942/files/2020/03/cakes.jpg?w=980&q=75), rgba(68, 68, 68, 0.212);
+    width: 100%;
+    background-color: gray;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.song{
+    padding: 0 15px 0 15px;
+}
+
+.pinky{
+    background-color: pink;
+    border: 0px solid pink;
+    color: white;
+}
+
+
+.custom-carousel {
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+.custom-img {
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    font-size: larger;
+}
+.custom-img-about {
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+    background-image: url(https://townsquare.media/site/942/files/2020/03/cakes.jpg?w=980&q=75);
+    background-position: center;
+    background-size: cover;
+}
+.divider-page {
+    margin: 5rem 0;
+  }
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    margin-top: 125px;
+}
+
+.featurette-text {
+    line-height: 40px;
+    
+}
+#findOutButton {
+    margin: 0 0 50px 0px;
+}
+
+@media (max-width: 450px) {
+    .featurette-heading{
+        margin-top: 50px;
+    }
+    h2{text-align: center;}
+    p{text-align: center;}
+}
+
+.z-10 {z-index: 10;}
+.upsideDown {transform: rotate(180deg);}
